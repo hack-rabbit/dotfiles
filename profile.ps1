@@ -50,20 +50,3 @@ Set-Alias shutdown stop_pc -Option AllScope
 function ec2 {
 	ssh -i C:\Users\thegr\.key\ec2-ubuntu-18.pem ubuntu@3.34.191.61
 }
-
-# virtual machines
-function u16 {
-	ssh user@192.168.71.128
-}
-
-function u18 {
-	ssh user@192.168.71.129
-}
-
-function u20 {
-	ssh user@192.168.71.130
-}
-
-function inco {
-	ssh root@incognito.spr.io
-}
