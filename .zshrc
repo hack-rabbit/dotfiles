@@ -126,11 +126,8 @@ alias te="trash-empty"
 alias tl="trash-list"
 alias tr="trash-restore"
 
-# disable rm
-alias rm='echo "This is not the command you are looking for."; false'
-
 # checksec feature
-alias checksec='python -c "import os;import sys;os.system(\"file \" + sys.argv[1]); from pwn import *;ELF(os.path.abspath(sys.argv[1]))"'
+alias checksec='python -c "from pwn import *;ELF(os.path.abspath(sys.argv[1]))"'
 
 # exploit boilerplate generator
 alias ex='python /home/user/.boilerplate/gen_ex.py'
