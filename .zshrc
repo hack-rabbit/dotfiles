@@ -120,6 +120,9 @@ cdf() {
    file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
 }
 
+# ll alias
+alias l="ll"
+
 # trash-cli configurations
 alias tp="trash-put"
 alias te="trash-empty"

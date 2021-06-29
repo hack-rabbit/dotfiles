@@ -4,11 +4,19 @@
 
 Personal dotfiles (configuration files) for various applications.
 
+## **Table of Contents**
+
+- [**Description**](#description)
+    - [Neovim](#Neovim)
+    - [tmux](#tmux)
+    - [zsh](#zsh)
+    - [Windows Powershell](#windows-powershell)
+
 ## **Description**
 
-### `init.vim` 
+### Neovim
 
-Configuration file for [Neovim](https://neovim.io/). This file should be placed in
+`init.vim` is a configuration file for [Neovim](https://neovim.io/). This file should be placed in
 - `~/.config/nvim` (in macOS and Linux)
 - `$HOME/appdata/local/nvim` (in Windows)
 
@@ -23,27 +31,27 @@ The major changes are
     - Python ([coc-pyright](https://github.com/fannheyward/coc-pyright))
     - Javascript ([coc-tsserver](https://github.com/neoclide/coc-tsserver))
 
-### `.tmux.conf`
+### tmux
 
-Configuration file for [tmux](https://github.com/tmux/tmux/wiki) (terminal multiplexer.) This file should be placed in home directory.
+`.tmux.conf` is a configuration file for [tmux](https://github.com/tmux/tmux/wiki) (terminal multiplexer.) This file should be placed in home directory.
 
 The major changes are
 - Prefix key changed to `Ctrl+B`
 - Pane number now starts from 1
 - Mouse scroll integrations
 
-### `.zshrc`
+### zsh
 
-Configuration file for zsh. This file should be placed in home directory. Note that this is [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) affected file.
+`.zshrc` is a configuration file for zsh. This file should be placed in home directory. Note that this is [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) affected file.
 
 The major changes are
 - Many aliases I prefer (e.g. `v` for `nvim`)
 - [fzf](https://github.com/junegunn/fzf) (fuzzy finder) commands (e.g. `cdf`)
 - Added highlights to manpages with [bat](https://github.com/sharkdp/bat)
 
-### `profile.ps1`
+### Windows Powershell
 
-Configuration file for Windows Powershell. To customize Powershell configuration, first run the following command in administrator mode.
+`profile.ps1` is a configuration file for Windows Powershell. To customize Powershell configuration, first run the following command in administrator mode.
 
 ```ps1
 Set-ExecutionPolicy RemoteSigned
