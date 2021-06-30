@@ -97,8 +97,8 @@ function CustomCd {
 }
 Set-Alias cd CustomCd -Option AllScope
 
-# rm -rf equivalent using git-bash
+# rm -rf equivalent in Windows
 function CustomRm {
-	bash -c "cd $PWD && rm -rf $args"
+	Remove-Item -Recurse -Force $args
 }
 Set-Alias rm CustomRm -Option AllScope
