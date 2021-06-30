@@ -17,6 +17,7 @@ Set-Alias windbg "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.ex
 Set-Alias cdb "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\cdb.exe"
 Set-Alias windbg32 "C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe"
 Set-Alias cdb32 "C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\cdb.exe"
+Set-Alias bash "C:\Program Files\Git\git-bash.exe"
 
 function upper {
     Set-Location ..
@@ -95,3 +96,9 @@ function CustomCd {
     }
 }
 Set-Alias cd CustomCd -Option AllScope
+
+# rm -rf equivalent using git-bash
+function CustomRm {
+	bash -c "cd $PWD && rm -rf $args"
+}
+Set-Alias rm CustomRm -Option AllScope
