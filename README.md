@@ -11,6 +11,7 @@ Personal dotfiles (configuration files) for various applications.
     - [tmux](#tmux)
     - [zsh](#zsh)
     - [Windows Powershell](#windows-powershell)
+    - [Windows Terminal](#windows-terminal)
 
 ## **Description**
 
@@ -68,3 +69,11 @@ The major changes are
 - Many aliases I prefer (e.g. `l` for `dir`)
 - `..`, `...`, `~` - Go to upper/2-levels above/home directory
 - `cd -` - 1-level go to previous directory
+
+### Windows Terminal
+
+`settings.json` is a configuration file for Windows Terminal. To modify Windows Terminal configurations, open settings pane with `Ctrl+,` then click settings icon. This will open settings file in JSON format.
+
+The major changes are
+- Added [Afterglow](https://github.com/YabataDesign/afterglow-theme) colorscheme for Windows Powershell
+- Added menu to open Developer Powershell for VS2019
